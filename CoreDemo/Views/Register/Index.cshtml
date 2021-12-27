@@ -1,5 +1,4 @@
-﻿@using EntityLayer.Concrete
-@model Writer
+﻿@model EntityLayer.Concrete.Writer
 
 @{
     ViewData["Title"] = "Index";
@@ -15,29 +14,35 @@
         <h3 class="tittle">Writer Register Page</h3>
         <div class="inner-sec">
             <div class="login p-5 bg-light mx-auto mw-100">
-                <form method="post">
+                @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                {
+
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom01">First and Last name</label>
-
-                            <input type="text" class="form-control" id="validationDefault01" name="WriterName" placeholder="" required="">
+                            @Html.TextBoxFor(x=>x.WriterName)
+                            @*<input type="text" class="form-control" id="validationDefault01" name="WriterName" placeholder="" required="">*@
                             @Html.ValidationMessageFor(x => x.WriterName, "", new { @class = "color:red" })
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom02">Email Address</label>
-                            <input type="email" class="form-control" id="validationDefault02" name="WriterMail" placeholder="" required="">
+                            @Html.TextBoxFor(x => x.WriterMail)
+                            @*<input type="email" class="form-control" id="validationDefault02" name="WriterMail" placeholder="" required="">*@
                             @Html.ValidationMessageFor(x => x.WriterMail, "", new { @class = "color:red;" })
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="exampleInputPassword1 mb-2">Password</label>
-                            <input type="password" class="form-control" name="WriterPassword" id="password1" placeholder="" required="">
+                            @Html.TextBoxFor(x=>x.WriterPassword)
+                            @*<input type="password" class="form-control" name="WriterPassword" id="password1" placeholder="" required="">*@
                             @Html.ValidationMessageFor(x => x.WriterPassword, "", new { @class = "color:red;" })
                         </div>
                         <div class="form-group col-md-6">
                             <label for="exampleInputPassword2 mb-2">Image File Path</label>
-                            <input type="text" class="form-control" name="WriterImage" id="Image" placeholder="" required="">
+                            @Html.TextBoxFor(x => x.WriterImage)
+                            @Html.ValidationMessageFor(x => x.WriterImage, "", new { @class = "color:red;" })
+                            @*<input type="text" class="form-control" name="WriterImage" id="Image" placeholder="" required="">*@
                         </div>
 
                         <select asp-items="ViewBag.item" class="form-control"></select>
@@ -47,8 +52,7 @@
                     <p>
                         <a href="#" id="btn1">By clicking Signup, I agree to your terms</a>
                     </p>
-                </form>
-
+                 }
             </div>
         </div>
     </div>

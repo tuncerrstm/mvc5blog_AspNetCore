@@ -164,3 +164,6 @@ C:\Users\Tuncer Rüstemoğlu\source\repos\CoreDemo\CoreDemo\obj\Debug\net5.0\Raz
 C:\Users\Tuncer Rüstemoğlu\source\repos\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentListByBlog\Default.cshtml.g.cs
 C:\Users\Tuncer Rüstemoğlu\source\repos\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Register\Index.cshtml.g.cs
 C:\Users\Tuncer Rüstemoğlu\source\repos\CoreDemo\CoreDemo\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\Tuncer Rüstemoğlu\source\repos\CoreDemo\CoreDemo\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\Tuncer Rüstemoğlu\source\repos\CoreDemo\CoreDemo\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Tuncer Rüstemoğlu\source\repos\CoreDemo\CoreDemo\obj\Debug\net5.0\CoreDemo.MvcApplicationPartsAssemblyInfo.cs
