@@ -1,5 +1,3 @@
-
-
 # .NET Core Blog Project
 ## Tools & Infrastructures & Technologies Used
 
