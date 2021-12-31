@@ -7,7 +7,6 @@
 - Core
 - MVC Pattern
 - N-Tier Architecture
-- Code First
 
 Our project was created using the code first methodology.
 
