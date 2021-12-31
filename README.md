@@ -4,7 +4,7 @@
 - Migrations
 - Layered Architecture
 - Entity Framework
-- Core
+- .NET Core
 - MVC Pattern
 - N-Tier Architecture
 
